@@ -10,4 +10,24 @@ for(let i = 0; i < 3; i++){
     console.log(message);
 }
 
-//
+//FOREACH Loop 
+fruit.forEach(element => {
+    console.log('Hello from FOREACH', element);
+});
+
+//Выбрать случайный элемент массива
+let rnd = Math.floor(Math.random() * fruit.length);
+console.log(rnd);
+
+let randomFruit = fruit[rnd];
+console.log('My random fruit:', randomFruit);
+
+//добавить новый элемент в массив
+fruit.push('avocado');
+console.log(fruit);
+
+//удалить элемент banana из массива
+let bananaIndex = fruit.indexOf('banana');
+console.log('index of banana: ', bananaIndex);
+fruit.splice(bananaIndex, 1);
+console.log(fruit);
